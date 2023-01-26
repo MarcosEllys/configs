@@ -94,6 +94,9 @@
     # Generate patch file
     pt = format-patch -M
 
+    # Show first commit
+    first = "!f() { git log $(git rev-list --max-parents=0 HEAD); }; f"
+
     # Show all commits of specific file
     follow = "!f() { D:/projetos/configs/git/git_utils.sh 10 $1; }; f"
 
