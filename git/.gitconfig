@@ -88,6 +88,9 @@
     # Push improved
     ps = push
 
+    # Push upstream improved
+    psu = "f() { git push --set-upstream origin $(git symbolic-ref --short HEAD); }; f"
+
     # Pull improved
     pu = pull --ff-only
 
