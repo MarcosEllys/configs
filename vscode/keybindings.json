@@ -8,6 +8,7 @@
   { "key": "ctrl+t", "command": "workbench.action.terminal.toggleTerminal" },
   { "key": "ctrl+w", "command": "-workbench.action.closeWindow", "when": "!editorIsOpen && !multipleEditorGroups"},
   { "key": "ctrl+x", "command": "workbench.action.terminal.kill", "when": "terminalFocus" },
+  { "key": "ctrl+9", "command": "workbench.action.showAllEditors" },
   { "key": "ctrl+0", "command": "workbench.view.explorer" },
   { "key": "ctrl+`", "command": "-workbench.action.terminal.focus", "when": "!terminalFocus && editorFocus && !editorReadonly" },
   { "key": "ctrl+`", "command": "workbench.action.focusActiveEditorGroup", "when": "terminalFocus" },
@@ -31,5 +32,5 @@
   { "key": "ctrl+shift+}", "command": "editor.unfold", "when": "editorTextFocus" },
   { "key": "ctrl+alt+l", "command": "editor.action.formatDocument", "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor" },
   { "key": "shift+alt+f", "command": "-editor.action.formatDocument", "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor" },
-  { "key": "shift+alt+f12", "command": "-references-view.findReferences", "when": "editorHasReferenceProvider" },
+  { "key": "shift+alt+f12", "command": "-references-view.findReferences", "when": "editorHasReferenceProvider" }
 ]
